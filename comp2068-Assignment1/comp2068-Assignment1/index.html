@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/game.css" rel="stylesheet" />
+    <title>Castlevania</title>
+</head>
+
+<body onload="init();">
+    <div id="impress">
+        <!--Slide 1-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>Infront of castle</p>
+                <p><a href="#2">Enter castle</a></p>
+            </div>
+        </div>
+
+        <!--Slide 2-->
+        <div id="2" class="step slide" data-y="1500">
+            <div class="slide-text">
+                <p>You see a staircase</p>
+                <div class="menu"><a href="#3">Stay on ground floor</a></div>
+                <div class="menu"><a href="#4">go up stairs</a></div>
+            </div>
+        </div>
+
+        <!--Slide 3-->
+        <div id="3" class="step slide" data-y="1500">
+            <div class="slide-text">
+                <p>You find an axe and a dagger pick one</p>
+                <div class="menu"><a href="#5">axe</a></div>
+                <div class="menu"><a href="#5">dagger</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/lib/impress.js"></script>
+    <script src="Scripts/game.js"></script>
+</body>
+</html>

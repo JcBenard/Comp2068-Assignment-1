@@ -1,21 +1,28 @@
 ﻿body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
+    background-image: url('../assets/images/Background.png');
+    background-size: 100% 100%;
+}
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
 }
 
 .step {
     position: relative;
     width: 900px;
-    padding: 40px;
-    margin: 20px auto;
+    padding: 10px 10px;
+    margin: 20px 20px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
@@ -44,21 +51,20 @@
 .slide {
     display: block;
 
-    width: 900px;
-    height: 700px;
-    padding: 40px 60px;
+    width: 850px;
+    height: 750px;
+    padding: 0px 0px;
 
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
-    color: rgb(102, 102, 102);
+    color: rgb(226, 226, 226);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 23px;
+    line-height: 33px;
     letter-spacing: -1px;
 }
 
@@ -73,3 +79,14 @@
 .slide q strong {
     white-space: nowrap;
 }
+
+p.slidesText{
+    position: fixed;
+    bottom: 5px;
+    text-align: center;
+}
+
+/*#slide1{
+    background-image: url('../assets/images/slide1.png');
+    background-size: 100% 100%;
+}*/

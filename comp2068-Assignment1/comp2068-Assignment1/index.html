@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/game.css" rel="stylesheet" />
     <title>Castlevania</title>
@@ -11,17 +12,19 @@
 <body onload="init();">
     <div id="impress">
         <!--Slide 1-->
-        <div id="1" class="step slide">
+        <div id="1" class="step slide" onmouseover='changeBack(1);'>
             <div class="slide-text">
-                <p>Infront of castle</p>
-                <p><a href="#2">Enter castle</a></p>
+                <p class="slidesText">
+                    You now stand before the castle of the great vampire Dracula. As one of the decendants of the Belmont clan you must enter the castle and defeat its master.
+                    <a href="#2">Enter castle</a>
+                </p>
             </div>
         </div>
 
         <!--Slide 2-->
         <div id="2" class="step slide" data-x="1500">
             <div class="slide-text">
-                <p>You see a staircase</p>
+                <p class="slidesText">You see a staircase</p>
                 <div class="menu"><a href="#4">go up stairs</a></div>
                 <div class="menu"><a href="#3">Stay on ground floor</a></div>
             </div>

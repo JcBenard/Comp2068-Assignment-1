@@ -18,3 +18,7 @@ function subCheck(subNeeded, goodOutcome,badOutcome, bossName) {
         document.getElementById(bossName).href = "#/" + badOutcome;
     }
 }
+
+function changeBack(id) {
+    document.getElementById(id).style.backgroundImage = "url('../assets/images/" + id + ".png')";
+}

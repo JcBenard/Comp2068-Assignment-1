@@ -6,7 +6,7 @@
 }
 
 a {
-    color: inherit;
+    color: rgb(150, 150, 150);
     text-decoration: none;
     padding: 0 0.1em;
     border-radius: 0.2em;
@@ -80,13 +80,8 @@ a {
     white-space: nowrap;
 }
 
-p.slidesText{
+.slide-text p{
     position: fixed;
     bottom: 5px;
     text-align: center;
 }
-
-/*#slide1{
-    background-image: url('../assets/images/slide1.png');
-    background-size: 100% 100%;
-}*/

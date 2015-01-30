@@ -1,7 +1,7 @@
 ﻿/// <reference path="lib/impress.js" />
-var sub;
+var sub;//Stores the players current subweapon
 
-function init() {
+function init() {//run on page loading
     console.log("Game Started");
     impress().init();
 
@@ -15,6 +15,7 @@ function init() {
 function subweapon(sub) {
     this.sub = sub;
 
+    //change all the subweapon images on the slides
     var subImgs = document.getElementsByTagName("img")
 
     for (x = 0; x <= subImgs.length; x++) {
